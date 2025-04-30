@@ -6,7 +6,7 @@ import pandas as pd
 import joblib
 import matplotlib.pyplot as plt
 import seaborn as sns
-from utils import plot_csat_distribution, plot_avg_resolution_vs_csat, plot_channel_vs_csat
+from prediction import plot_csat_distribution, plot_avg_resolution_vs_csat, plot_channel_vs_csat
 
 # ----------- Page Setup -----------
 st.set_page_config(page_title="DeepCSAT – Ecommerce", layout="wide")
