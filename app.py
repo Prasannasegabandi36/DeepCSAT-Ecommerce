@@ -16,7 +16,7 @@ st.markdown("<style>h1{font-size: 36px;}</style>", unsafe_allow_html=True)
 # ----------- Load Model Safely -----------
 try:
    model = joblib.load("../../OneDrive/Documents/Desktop/DeepCSAT/model.pkl")
-    preprocessor = joblib.load("../../OneDrive/Documents/Desktop/DeepCSAT/preprocessor.pkl")
+   preprocessor = joblib.load("../../OneDrive/Documents/Desktop/DeepCSAT/preprocessor.pkl")
 except FileNotFoundError:
     st.error("❌ Model files not found. Please run `train_model.py` first.")
     st.stop()
