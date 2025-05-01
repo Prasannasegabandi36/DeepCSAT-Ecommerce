@@ -52,7 +52,7 @@ accuracy = accuracy_score(y_test, pipeline.predict(X_test))
 print(f"✅ Test Accuracy: {accuracy:.2f}")
 
 # Save model
-os.makedirs("../../OneDrive/Documents/Desktop/DeepCSAT/model.pkl", exist_ok=True)
-joblib.dump(pipeline.named_steps['clf'], "../../OneDrive/Documents/Desktop/DeepCSAT/model.pkl")
-joblib.dump(pipeline.named_steps['pre'], "../../OneDrive/Documents/Desktop/DeepCSAT/preprocessor.pkl")
+os.makedirs("model", exist_ok=True)
+joblib.dump(pipeline.named_steps['clf'], "model/model.pkl")
+joblib.dump(pipeline.named_steps['pre'], "model/preprocessor.pkl")
 print("✅ Model and preprocessor saved in /model/")
